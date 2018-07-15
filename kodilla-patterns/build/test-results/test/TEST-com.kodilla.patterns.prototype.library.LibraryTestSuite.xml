@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kodilla.patterns.prototype.library.LibraryTestSuite" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-07-14T20:29:59" hostname="MacBook-Air-Kasia.local" time="0.024">
+  <properties/>
+  <testcase name="testGetBooks" classname="com.kodilla.patterns.prototype.library.LibraryTestSuite" time="0.024"/>
+  <system-out><![CDATA[Library{name='Art Books', books:
+[Book{title='Red', author='Kate Green', publicationDate=2011-11-24}, Book{title='Black', author='Joseph Nowak', publicationDate=2008-04-18}]}
+Library{name='Art Books', books:
+[Book{title='Red', author='Kate Green', publicationDate=2011-11-24}, Book{title='Black', author='Joseph Nowak', publicationDate=2008-04-18}]}
+Library{name='Art Books', books:
+[Book{title='Red', author='Mark Newton', publicationDate=1978-05-28}, Book{title='Red', author='Mark Newton', publicationDate=1978-05-28}, Book{title='Red', author='Mark Newton', publicationDate=1978-05-28}]}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
