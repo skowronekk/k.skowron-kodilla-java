@@ -6,9 +6,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 @NamedNativeQuery(
-        name = "Company.retrieveThreeFirstSigns",
+        //name = "Company.retrieveThreeFirstSigns",
+        //query = "SELECT * FROM COMPANIES " +
+               //"WHERE LEFT (COMPANY_NAME, 3) ",
+        //resultClass = Company.class
+
+        name = "Company.findCompanyWithLetters",
         query = "SELECT * FROM COMPANIES " +
-                "WHERE LEFT (COMPANY_NAME, 3) ",
+               " WHERE COMPANY_NAME LIKE '%ter%'",
         resultClass = Company.class
 )
 

@@ -5,9 +5,17 @@ import javax.validation.constraints.NotNull;
 import java.util.ArrayList;
 import java.util.List;
 
-@NamedQuery(
-        name = "Employee.retrieveEmployeeLastname",
-        query = "FROM Employee WHERE lastname = :LASTNAME"
+//@NamedQuery(
+        //name = "Employee.retrieveEmployeeLastname",
+        //query = "FROM Employee WHERE lastname = :LASTNAME"
+//)
+
+@NamedNativeQuery(
+
+        name = "Employee.findEmployeeWithLetters",
+        query = "SELECT * FROM EMPLOYEES " +
+                " WHERE FIRSTNAME OR LASTNAME LIKE '%ith%'",
+        resultClass = Employee.class
 )
 
 @Entity

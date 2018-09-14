@@ -11,7 +11,10 @@ import java.util.List;
 @Transactional
 @Repository
 public interface CompanyDao extends CrudRepository<Company, Integer> {
+    //@Query(nativeQuery = true)
+    //List<Company> retrieveThreeFirstSigns();
+
     @Query(nativeQuery = true)
-    List<Company> retrieveThreeFirstSigns();
+    List<Company> findCompanyWithLetters();
 
 }

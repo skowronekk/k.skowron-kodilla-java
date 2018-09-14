@@ -67,7 +67,7 @@ public class CompanyDaoTestSuite {
         }
     }
 
-    @Test
+    /*@Test
     public void testNamedQueries(){
 
         //Given
@@ -107,5 +107,5 @@ public class CompanyDaoTestSuite {
         Assert.assertEquals("Smith", employeeLastname.get(0).getLastname());
 
 
-    }
+    }*/
 }
