@@ -14,7 +14,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 import java.util.List;
 
 
-@RunWith(SpringRunner.class)
+/*@RunWith(SpringRunner.class)
 @SpringBootTest
 public class SearchFacadeTestSuite {
     @Autowired
@@ -59,5 +59,5 @@ public class SearchFacadeTestSuite {
         Assert.assertEquals(2, resultList.size());
         Assert.assertEquals(1, resultList2.size());
 
-    }
-}
+    }*/
+
