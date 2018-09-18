@@ -1,5 +1,6 @@
 package com.kodilla.patterns2.facade.dao;
 
+import com.kodilla.patterns2.facade.api.OrderDto;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
@@ -20,9 +21,9 @@ public class WatcherFacade {
     //LOGGER.info("Logging the event");
 
     @Before("execution(* com.kodilla.patterns2.facade.api.OrderFacade.processOrder(..))" +
-            "&& args(theNumber) && target(object)")
-    public void logEvent(BigDecimal theNumber, Object object) {
-        LOGGER.info("Class: " + object.getClass().getName() + ", Args: " + theNumber);
+            "&& args(odto, user) && target(object)")
+    public void logEvent(OrderDto odto, Long user, Object object) {
+        LOGGER.info("Class: " + object.getClass().getName() + ", Args: " + odto + ", " + user);
     }
 
     @Around("execution(* com.kodilla.patterns2.facade.api.OrderFacade.processOrder(..))")
