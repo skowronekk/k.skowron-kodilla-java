@@ -13,10 +13,10 @@ public class MedianAdapter extends MedianAdaptee implements Classifier {
         Map<com.kodilla.patterns2.adapter.bookclasifier.libraryb.BookSignature, com.kodilla.patterns2.adapter.bookclasifier.libraryb.Book>
                 booksListMap = new HashMap<>();
 
-        for (com.kodilla.patterns2.adapter.bookclasifier.librarya.Book bookLyB : bookSet) {
-            booksListMap.put(new com.kodilla.patterns2.adapter.bookclasifier.libraryb.BookSignature(bookLyB.getSignature()),
-                    new com.kodilla.patterns2.adapter.bookclasifier.libraryb.Book(bookLyB.getAuthor(), bookLyB.getTitle(),
-                            bookLyB.getPublicationYear()));
+        for (com.kodilla.patterns2.adapter.bookclasifier.librarya.Book bookLyA : bookSet) {
+            booksListMap.put(new com.kodilla.patterns2.adapter.bookclasifier.libraryb.BookSignature(bookLyA.getSignature()),
+                    new com.kodilla.patterns2.adapter.bookclasifier.libraryb.Book(bookLyA.getAuthor(), bookLyA.getTitle(),
+                            bookLyA.getPublicationYear()));
         }
         return medianPublicationYear(booksListMap);
 
