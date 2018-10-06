@@ -17,7 +17,7 @@ public class DbManagerTestSuite {
         Assert.assertNotNull(dbManager.getConnection());
     }
 
-    @Test
+    /*@Test
     public void testSelectUsers() throws SQLException {
         //Given
         DbManager dbManager = DbManager.getInstance();
@@ -65,6 +65,6 @@ public class DbManagerTestSuite {
         statement.close();
         Assert.assertEquals(2, counter);
 
-    }
+    }*/
 }
 
